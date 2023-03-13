@@ -33,7 +33,7 @@ public class BaseDriver {
         // 30 sn süresince sayfanın yüklenmesini bekle yüklenmezse hata ver
         // eger 2 sn yüklerse 30 snnbeklemez
 
-        driver.manage().timeouts().implicitlyWait(dr);// Bütün WebElementlerşn element bazında elementte özel işlem yapılmadan önce
+       // driver.manage().timeouts().implicitlyWait(dr);// Bütün WebElementlerşn element bazında elementte özel işlem yapılmadan önce
         // hazır hale gelmesi verilen süre // eger 2 sn yüklenirse 30 sn beklemez
 
     }
