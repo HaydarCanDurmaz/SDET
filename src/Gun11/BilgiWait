@@ -10,3 +10,18 @@
 
 
 3- HTML içinde var görünür değil
+
+
+
+locator bulmasıyla ilgili bekletmeler için
+bütün elemanlarda geçerli ve sadece bir kez
+yazılan bekletme : imlicitlyWait
+
+-- elemente özel ve her türlü değişimi süresiyle
+ilgili sadece o elemente çalışan bekletme
+ExplicitWait
+
+
+
+MyFunc.Bekle : verilen süre kadar
+intelliji durduruyor
