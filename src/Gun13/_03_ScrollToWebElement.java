@@ -1,5 +1,6 @@
 package Gun13;
 
+import Utlity.BaseDriver;
 import Utlity.BaseDriver1;
 import Utlity.MyFunc;
 import org.junit.Test;
@@ -7,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
-public class _03_ScrollToWebElement extends BaseDriver1 {
+public class _03_ScrollToWebElement extends BaseDriver {
     @Test
     public void Test1() {
 

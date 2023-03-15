@@ -29,7 +29,7 @@ public class BaseDriver1 {
 
 
         // outputtaki gerekmeyen logları kaldırıcaz
-      // System.setProperty(FirefoxDriverService.,"true");
+        System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "/dev/null");
         driver = new FirefoxDriver();
 
         driver.manage().window().maximize();// ekran max yapıyor.

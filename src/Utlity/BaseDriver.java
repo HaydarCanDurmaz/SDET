@@ -3,6 +3,7 @@ package Utlity;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
 import java.util.logging.Level;
@@ -19,10 +20,13 @@ public class BaseDriver {
         Logger logger = Logger.getLogger("");// sisteme ait olan bütün logları üreten objeye/ servise ulaştım ""
         logger.setLevel(Level.SEVERE);// sadece erorları göster
 
+        ChromeOptions options=new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+
 
         // outputtaki gerekmeyen logları kaldırıcaz
         System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY,"true");
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
 
         driver.manage().window().maximize();// ekran max yapıyor.
 
